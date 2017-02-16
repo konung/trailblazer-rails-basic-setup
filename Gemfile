@@ -23,7 +23,7 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Trailblazer
 gem 'trailblazer', '2.0.3'
 gem 'trailblazer-rails', '1.0.2'
-# If you want to replace ActiveView with the awesomeness of Cells
+# If you want to replace ActionView with the awesomeness of Cells
 gem 'trailblazer-cells', '0.0.3'
 # There are adapters for Slim & Haml as well. Hamlit is faster than both.
 
