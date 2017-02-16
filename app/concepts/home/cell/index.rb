@@ -10,7 +10,7 @@ module Home::Cell            # namespace
     # Home::Cell::Index.(OpenStruct.new(title: "I'm a title")).show
 
     def show
-      @string = 'I am a class variable from Home::Cell::Index, you can use me in the view'
+      @string = 'I am a cell instance variable from Home::Cell::Index, you can use me in the view'
       render
     end
   end
