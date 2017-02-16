@@ -1,4 +1,3 @@
-# trailblazer-rails-basic-setup
 # Setting up Trailblazer with Rails & React
 ## Cells, Reform, Roar, Representer are included as well
 
