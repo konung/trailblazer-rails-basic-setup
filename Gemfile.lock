@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/trailblazer/trailblazer-endpoint.git
+  revision: 9ec75c05425a5447893e67c47042a98026f3c94b
+  specs:
+    trailblazer-endpoint (0.0.1)
+      dry-matcher
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,6 +56,9 @@ GEM
     cells-hamlit (0.2.0)
       cells (~> 4.0)
       hamlit
+    cells-rails (0.0.7)
+      actionpack (>= 3.0)
+      cells (>= 4.1.6, < 5.0.0)
     coderay (1.1.1)
     concurrent-ruby (1.0.4)
     debug_inspector (0.0.2)
@@ -74,6 +84,7 @@ GEM
       dry-container (~> 0.2, >= 0.2.6)
       dry-core (~> 0.2)
       dry-equalizer (~> 0.2)
+    dry-matcher (0.6.0)
     dry-types (0.9.4)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1)
@@ -217,6 +228,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   cells-hamlit
+  cells-rails
   dry-validation
   hamlit-rails
   listen (~> 3.0.5)
@@ -226,6 +238,7 @@ DEPENDENCIES
   rails (~> 5.0.1)
   trailblazer (= 2.0.3)
   trailblazer-cells (= 0.0.3)
+  trailblazer-endpoint!
   trailblazer-rails (= 1.0.2)
   tzinfo-data
   web-console (>= 3.3.0)

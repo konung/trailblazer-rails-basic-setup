@@ -20,16 +20,21 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'responders'
+
 # Trailblazer
 gem 'trailblazer', '2.0.3'
 gem 'trailblazer-rails', '1.0.2'
+gem 'trailblazer-endpoint', github: 'trailblazer/trailblazer-endpoint'
 # If you want to replace ActionView with the awesomeness of Cells
-gem 'trailblazer-cells', '0.0.3'
 # There are adapters for Slim & Haml as well. Hamlit is faster than both.
+gem 'cells-rails'
+gem 'hamlit-rails'
+gem 'cells-hamlit'
+gem 'trailblazer-cells', '0.0.3'
 
-gem "cells-hamlit"
 # For validation. You could stick with ActiveModel validations, but dry.rb stuff is nicer IMHO
-gem "dry-validation"
+gem 'dry-validation'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -42,7 +47,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
-  gem 'hamlit-rails'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -70,6 +70,7 @@ Disable stuff in Gemfile you won't need. For instance I run my stuff under passe
 
 ### application.rb
 Some defaults in application.rb
+```ruby
     config.time_zone = 'Central Time (US & Canada)'
 
     config.generators do |g|
@@ -81,11 +82,31 @@ Some defaults in application.rb
     # Up to you. You may want to set it up later
     config.active_job.queue_adapter = :delayed_job
 
+```
 
 
+# Getting Home page up and running
 
-#
+Let's give our domain logic a place and also setup a root controller called Home, place for Layouts, and a root route
 
-Let's give our domain logic a home:
+Create this folder / file structure
+``` 
+-- app
+---- concepts
+------ home
+-------- cell
+---------- index.rb
+-------- view
+---------- index.haml
+-------- layout
+```
 
-mkdir app/concepts
+```shell
+rails g controller home
+```
+
+```ruby
+# routes.rb
+  root 'home#index'
+```
+
