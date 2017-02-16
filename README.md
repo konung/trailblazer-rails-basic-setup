@@ -2,12 +2,12 @@
 ## Cells, Reform, Roar, Representer are included as well
 
 ### Thanks before anything else
-Without Nick Sutter and fine folks who contribute to Trailblazer, Cells, Reform, Roar, etc  - none of this would be possible. So - THANK YOU!
+Without [Nick Sutterer](https://github.com/apotonick) and fine folks who contribute to [Trailblazer, Cells, Reform, Roar, 
+etc](http://trailblazer.to/)  - none of this would be possible. So - THANK YOU!
 
 ### Purpose and General comments
 
-This started as a way to document my steps setting up a new Rails 5 project with Traiblazer 2.0. This isn't meant to be an authoritative
-document - but I did poke brains of some of smart people on the TRB support channel on gitter as I was working on this. 
+This started as a way to document my steps setting up a new Rails 5 project with Traiblazer 2.0. This isn't meant to be an authoritative document - but I did poke brains of some of smart people on the TRB support channel on gitter as I was working on this. 
 
 I would suggest in general to avoid all the extra baggage provided by Rails if you are not going to use it: sprockets, js, trubolinks, spring, etc. You could use --api flag as well. Having said that, this app was setup with everything in place. I only specified my DB of choice - MariaDB/MySQL. But you can use whatever you prefer - I highly recommend to match your production.
 
