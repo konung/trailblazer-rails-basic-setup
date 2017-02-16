@@ -27,7 +27,7 @@ If you want to - you can just clone the repo and pick up from where I left off, 
 ### Console
 
 Suggested (once you are comfortable with TRB):
-```bash
+```shell
     rails new trailblazer-rails-basic-setup --skip-turbolinks 
                                             --skip-spring 
                                             --skip-sprockets 
@@ -35,7 +35,7 @@ Suggested (once you are comfortable with TRB):
                                             --database=mysql
 ```
 Actual (used in this setup):
-```basg
+```shell
       rails new trailblazer-rails-basic-setup --database=mysql
 ```
 
@@ -45,6 +45,7 @@ Don't forget to setup test & dev DBs and setup user/pass in database.yml
 
 
 ### Update Gemfile
+
 ```ruby
     # Trailblazer
     gem "trailblazer", '2.0.3'
