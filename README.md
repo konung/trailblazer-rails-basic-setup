@@ -27,17 +27,17 @@ If you want to - you can just clone the repo and pick up from where I left off, 
 ### Console
 
 Suggested (once you are comfortable with TRB):
-
+```bash
     rails new trailblazer-rails-basic-setup --skip-turbolinks 
                                             --skip-spring 
                                             --skip-sprockets 
                                             --skip-puma 
                                             --database=mysql
-
+```
 Actual (used in this setup):
-
+```basg
       rails new trailblazer-rails-basic-setup --database=mysql
-
+```
 
 
 ### Database:
@@ -45,7 +45,7 @@ Don't forget to setup test & dev DBs and setup user/pass in database.yml
 
 
 ### Update Gemfile
-
+```ruby
     # Trailblazer
     gem "trailblazer", '2.0.3'
     gem "trailblazer-rails"
@@ -63,7 +63,7 @@ Don't forget to setup test & dev DBs and setup user/pass in database.yml
 
     # Add minitest to test / development. You are welcome to use rspec.
     gem 'minitest'
-
+```
 Disable stuff in Gemfile you won't need. For instance I run my stuff under passenger both in dev and production - there is no need to load Puma 
 (an excelent webserver otherwise)
 
