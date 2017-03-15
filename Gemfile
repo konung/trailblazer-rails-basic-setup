@@ -34,11 +34,17 @@ gem 'cells-hamlit'
 gem 'trailblazer-cells', '0.0.3'
 
 # For validation. You could stick with ActiveModel validations, but dry.rb stuff is nicer IMHO
+gem 'reform'
+gem 'reform-rails'
 gem 'dry-validation'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'awesome_print'
+  gem 'pry-rails'
+  gem 'pry-doc'
   gem 'pry-byebug'
   gem 'minitest-rails'
 end
