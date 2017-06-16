@@ -26,7 +26,7 @@ module TrailblazerRailsBasicSetup
 
     config.generators do |g|
       g.template_engine :haml
-      g.test_framework :minitest #, spec: true, fixture: false
+      g.test_framework :minitest , spec: true, fixture: true
     end
 
     # config.active_job.queue_adapter = :delayed_job

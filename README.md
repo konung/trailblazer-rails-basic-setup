@@ -141,4 +141,7 @@ app/controllers/home_controller.rb has an index action. When we hit it, we proce
 
 It's pretty straightforward. As we explore more involved structures and concepts, you will notice, that overall - the architecture is the same: simple and straightforward. It's very easy to keep a mental model of a fairly large project.
 
+## Easy tests
+It's ridiculously easy to test home view now. Check out test/concepts/home/index_cell_test.rb
+
 
