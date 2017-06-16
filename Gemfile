@@ -26,6 +26,7 @@ gem 'responders', '~> 2.4.0'
 gem 'trailblazer', '~> 2.0.6'
 gem 'trailblazer-rails', '~> 1.0.2'
 gem 'trailblazer-endpoint', github: 'trailblazer/trailblazer-endpoint'
+
 # If you want to replace ActionView with the awesomeness of Cells
 # There are adapters for Slim & Haml as well. Hamlit is faster than both.
 gem 'cells-rails' , '~> 0.0.8'
