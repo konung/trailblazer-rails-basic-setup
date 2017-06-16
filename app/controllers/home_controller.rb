@@ -9,7 +9,10 @@ class HomeController < ApplicationController
     model = OpenStruct.new(title: "I'm a title")
 
     respond_to do |format|
-      format.html { render html: concept(Home::Cell::Index, model) }
+      # By the way to take a look at the ouput of your cell in console (or tests) is very easy:
+      # Home::Cell::Index.(model).render
+      format.html { render html: concept(Home::Cell::Index, model)}
+
       # Later on we will use Roar to create JSON & XML representers for our first "real model"
       # Here we are just testing responses to common formats
       format.json { render json: model }
