@@ -161,3 +161,5 @@ We can comment out ActionView now.
 Our app is blazingly fast .  Granted we haven't created any complicated models and view yet, but 4ms views? 1ms json responses? on Rails? It's possible....
 
 
+
+# Let's create a song controller, view, reform, etc. Everything a modern concept needs ;-)

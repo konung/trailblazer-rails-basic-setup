@@ -10,6 +10,4 @@ module Song::Cell
       render
     end
   end
-
-
 end
