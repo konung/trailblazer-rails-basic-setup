@@ -4,8 +4,10 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+nirvana:
+  full_name: "Nirvana"
+  country: "US"
+  sales_cents: "50_000_00"
+  signed_with_label: true
+  billboard_position: 1
+  bio: "Awesome Grunge band"

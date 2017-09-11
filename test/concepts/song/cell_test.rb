@@ -2,9 +2,8 @@ require 'test_helper'
 
 class SongConceptTest < Cell::TestCase
   test "show" do
-    html = concept("song/cell").(:show)
-    assert html.match /<p>/
+    title = "Find me"
+    html =  Song::Cell::Show.().(:show)
+    assert_includes html, title
   end
-
-
 end

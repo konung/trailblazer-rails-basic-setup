@@ -49,12 +49,10 @@ ActiveRecord::Schema.define(version: 20170315173638) do
   create_table "songs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title", null: false
     t.integer "style", limit: 1, null: false
-    t.integer "artist", null: false
-    t.integer "album", null: false
+    t.integer "album_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["album"], name: "index_songs_on_album"
-    t.index ["artist"], name: "index_songs_on_artist"
+    t.index ["album_id"], name: "index_songs_on_album_id"
     t.index ["style"], name: "index_songs_on_style"
     t.index ["title"], name: "index_songs_on_title"
   end
